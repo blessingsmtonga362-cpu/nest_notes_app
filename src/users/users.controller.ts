@@ -31,7 +31,7 @@ export class UsersController {
     return this.usersService.update(req.user.name,updateUserDto);
   }
  
-  @Delete(":name")
+  @Delete()
   delete(@Request() req){
     return this.usersService.delete(req.user.name);
   }
